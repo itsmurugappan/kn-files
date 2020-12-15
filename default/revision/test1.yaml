@@ -1,0 +1,19 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  name: test1
+  namespace: default
+spec:
+  template:
+    metadata:
+      annotations:
+        client.knative.dev/user-image: test/test
+      creationTimestamp: null
+      name: test1-jyvks-1
+    spec:
+      containers:
+      - image: test/test
+        name: ""
+        resources: {}
+status: {}

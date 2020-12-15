@@ -1,0 +1,19 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  name: testsvc
+  namespace: foo
+spec:
+  template:
+    metadata:
+      annotations:
+        client.knative.dev/user-image: docker.io/baz
+      creationTimestamp: null
+      name: testsvc-mhtzg-1
+    spec:
+      containers:
+      - image: docker.io/baz
+        name: ""
+        resources: {}
+status: {}

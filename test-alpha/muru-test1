@@ -1,0 +1,19 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  name: muru-test1
+  namespace: test-alpha
+spec:
+  template:
+    metadata:
+      annotations:
+        client.knative.dev/user-image: murugapans/hww
+      creationTimestamp: null
+      name: muru-test1-bhmpr-1
+    spec:
+      containers:
+      - image: murugapans/hww
+        name: ""
+        resources: {}
+status: {}

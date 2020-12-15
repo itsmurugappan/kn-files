@@ -1,0 +1,19 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  name: test
+  namespace: admin-team
+spec:
+  template:
+    metadata:
+      annotations:
+        client.knative.dev/user-image: foo
+      creationTimestamp: null
+      name: test-hjcgd-1
+    spec:
+      containers:
+      - image: foo
+        name: ""
+        resources: {}
+status: {}

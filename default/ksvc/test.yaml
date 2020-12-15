@@ -1,0 +1,19 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  name: test
+  namespace: default
+spec:
+  template:
+    metadata:
+      annotations:
+        client.knative.dev/user-image: foo
+      creationTimestamp: null
+      name: test-ffjxr-1
+    spec:
+      containers:
+      - image: foo
+        name: ""
+        resources: {}
+status: {}

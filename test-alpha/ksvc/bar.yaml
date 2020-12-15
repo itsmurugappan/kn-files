@@ -1,0 +1,19 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  name: bar
+  namespace: test-alpha
+spec:
+  template:
+    metadata:
+      annotations:
+        client.knative.dev/user-image: muru/happy
+      creationTimestamp: null
+      name: bar-ynrrw-1
+    spec:
+      containers:
+      - image: muru/happy
+        name: ""
+        resources: {}
+status: {}

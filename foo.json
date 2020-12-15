@@ -1,0 +1,30 @@
+{
+    "kind": "Service",
+    "apiVersion": "serving.knative.dev/v1",
+    "metadata": {
+        "name": "testsvc",
+        "namespace": "foo",
+        "creationTimestamp": null
+    },
+    "spec": {
+        "template": {
+            "metadata": {
+                "name": "testsvc-jzmgj-1",
+                "creationTimestamp": null,
+                "annotations": {
+                    "client.knative.dev/user-image": "docker.io/baz"
+                }
+            },
+            "spec": {
+                "containers": [
+                    {
+                        "name": "",
+                        "image": "docker.io/baz",
+                        "resources": {}
+                    }
+                ]
+            }
+        }
+    },
+    "status": {}
+}

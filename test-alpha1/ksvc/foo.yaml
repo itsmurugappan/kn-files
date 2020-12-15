@@ -1,0 +1,19 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  name: foo
+  namespace: test-alpha1
+spec:
+  template:
+    metadata:
+      annotations:
+        client.knative.dev/user-image: muru/happy
+      creationTimestamp: null
+      name: foo-blbtb-1
+    spec:
+      containers:
+      - image: muru/happy
+        name: ""
+        resources: {}
+status: {}

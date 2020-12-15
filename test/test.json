@@ -1,0 +1,30 @@
+{
+    "kind": "Service",
+    "apiVersion": "serving.knative.dev/v1",
+    "metadata": {
+        "name": "test",
+        "namespace": "test-alpha",
+        "creationTimestamp": null
+    },
+    "spec": {
+        "template": {
+            "metadata": {
+                "name": "test-wsqtz-1",
+                "creationTimestamp": null,
+                "annotations": {
+                    "client.knative.dev/user-image": "bar"
+                }
+            },
+            "spec": {
+                "containers": [
+                    {
+                        "name": "",
+                        "image": "bar",
+                        "resources": {}
+                    }
+                ]
+            }
+        }
+    },
+    "status": {}
+}
